@@ -1,0 +1,27 @@
+Points:
+i>Insights on lists:
+Rather than initializing the list with [] it is better to just use list()
+When we initialize a list: list() is same as list(list()) both are:[]
+If we need lists of lists we need to specificaly initialize it as [[]]
+When we initialize a list and use.append to it:
+	a=[]
+	a.append(2)
+	a=[2] 
+  but when,
+	a=[[]]
+	a.append(2)
+	a=[[],2]
+	a[0].append(2)
+	a=[[2],2]
+
+ii> Insights on the problem basically the entire thought process mine vs his:
+First we should try to approach a brute force solution. When I did I found out that
+we can take one interval at a time from the start add it to a list and then compare it to the next successive interval but I did not think of how I was going to compare two intervals,
+but I could have given it a little thought. Its just that if the start time of one lecture is greater than the end time of another lecture that is not inside the domain of one lecture time interval then they do not collide so I had to two comparisons. So of course I abstracted this part as I did not want to think about implementation details much and then I went on to think if I use this approach what will be the time complexity. I came to the conclusion that it will be O(n^2). Now I thought is there any point in using recursion but there was no point as in the end I came to the conclusion that even if I used recursion there was no way I could have done "Division Of Work" because for each interval I had to check all the intervals. Now I thought which I should have thought of before thinking about other approaches.Now, I thought that if I needed to allocate an interval to another room I needed to check not if there was any interval merged but if it did not merge then I can add that interval to the the room which had intervals which did not collide with the intervals in that room. So the complete approach would be to check throughout the intervals and if one interval collides with all interval then room count will increase by one but if it does collide with even one then the count will not increase.But that approach was wrong and I realized it quickly as not colliding with one interval did not mean that it won't collide with another interval in the room. So the best approach would be for every interval traverse through each rooms intervals and if for all those intervals of a particualr room no collision occurred then the interval could be in the current room else the next room has to be traversed. 
+
+Now I should have come to that conclusion faster.It took time for me to fathom that without having to go through different rooms I can not add another interval by just traversing through a list not structured as rooms. 
+
+I had thought of sorting but before I had come to the rooms data structure understanding I had started to think of sorting even before I sadly knew if I could correctly count all the intervals I thought of sorting and obviously it did not work but the main problem was after finding the rooms data structure approach I should have again thought what insight sorting could have given me. Now, finally I got the insight from sorting that for each room since the successive interval's start time will always be greater than the all the interval's start time so the last interval of each room will have a start time and that start time will always be lesser than the start time of the successive interval and thus we can just check for each interval if the start time of the successive interval is lesser than the end time of the last added interval of each room as it will be enough as then that interval will lie between the start and end time of the last interval of that room.
+
+Insights on how sort an array using sort and the key attribute
+

@@ -1,0 +1,88 @@
+1> when asked a string question do not only think of sorting try to think if you can create arrays and use their index
+
+2> in python if str.index(a) does not find a it gives an error
+
+3>to use Arrays.sort on a string you need to convert it to a character array
+
+4> Arrays.sort is inplace that is dont write a=Arrays.sort(a) Arays.sort(a) is enough
+
+5> When you hear about substrings or subarrays do not think about combinations at the very starting only, try to think of easier things fo example if you have to find the subarrays of an array that add up to give the max sum rather than finding all the combinations you can simply start with a simple one subarray at a[0] and move up to the other elements if a[1]+a[0] greater than the a[0] then new subarray is a[1],a[0] else if a[1]+a[0]<0 then new subarray = max(a[1],a[0])
+
+6> Learnt about python closures. Check more here https://www.programiz.com/python-programming/closure
+
+7> exit() in python kills the entire REPL script but sys.exit() only kills the current program, so on executing sys.exit() the current program ends and you see a brand new ">>>" sign.
+
+8> if b is a string then ,b[:-0] gives '' ouput.
+
+9> When given a big problem use divide and conquerthat is solve smaller pieces first that is think the actual solution being a combination of smaller solutions. That is check the
+what happens when no element is considered , then what happen when on or two elements are considered then try to break the problem into like if there are 6 elements and then what if you use recursion to come to 6-5-4-3 then 2 where you can surely get one answer and then you have 3rd and combination of (2nd and 1st) elements again giving two elements whose answer you know.
+		This is similar to the concept that is used in the 5th point .
+
+10> n=input()
+    l=n.split(' ')
+    return list(map(int,l))
+
+Here is a small module for taking a string of spaced integers: 2 4 6 5
+and then converting them into a list of actual integers: [2,4,6,5]
+
+11> When you in Python do not specify what a function returns it returns None by default
+
+12> When you get a problem if it needs you like really needs you to know what happens at its end to output true then you should think on the lines of recursion else if you are told to find the maximum sum then you do not need to know the end and may try another way like starting from the start considering as less elements as possible and checking what conclusions you can draw from them.
+
+13> When you have a recursion relationship like: num_ways(N)=num_ways(N-1)+num_ways(N-2)
+This seems a lot like the fibinacci relationship: N +(N+1)=N+2 which can beget the relationship  n=n-1 + n-2, as num_ways(4)=num_ways(3)+num_ways(2), then 
+num_ways(3)=num_ways(2)+num_ways(1)  and num_ways(2)=num_ways(1)+num_ways(0)
+We can store the redundant steps like num_ways(2) and num_ways(1) and maybe use dynamic programming to use bottom up techniques
+
+14> Whenever you are asked to find duplicates of strings containing albhabets 0 to 26 ord(a) value then you can think of a how to look up if a charcter is in the string or not as the string needs to be unique devoid of duplicates so you can think of
+  		1) Maybe using a for loop but it will take O(n) time
+		2) Maybe using a Hash Table but then we need to have the whole thing of 			entering into it
+		3) We can use an array numberes from 0 to 25 as we can use that to check 			exactly like for a we need to check the (ord(a)=1 -0) index to 			check if it has more than one occurrences or not thus this is way 			more faster with o(1) time complexity of inserting and searching
+			and constant space 0 to 26 
+	Note: A hasp table should be considered if we do not the domain of the sum like 	letters are only from 0 to 26 like that
+	Note: A Hash Table has amortized O(1) insert, search time complexity but
+	      	in the above case the array has O(1) insert and search but not amortized.
+
+15> random.uniform(a, b) appears to be what your looking for. From the docs:
+
+Return a random floating point number N such that a <= N <= b for a <= b and b <= N <= a for b < a.
+
+if you want generate a random float with N digits to the right of point, you can make 	this 
+
+round(random.uniform(1,2), N)
+the second argument is the number of decimals.
+
+
+15> If s="dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext"
+	i) Then \n is considered as an escape sequence when print() is used on s
+	ii) Thus s[3]='\n' but it is still considered as a single entity essentially
+	iii) Using r'vh' the r being the raw input pointer we see that\n becomes \\n and
+	      instead of '\n' '\\' is a single entity.
+	iv) s.split('\n') an be used on such a string without taing raw input using r.
+	v) With correspondence to point iii) input() in Python3 acts like raw_input()
+	in python2 so when you pass "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext" as input or 		raw input it stores 'dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext'.
+
+*16) To check if a key in dictionary exists or not we should use key in dictionary.items()
+	, for example if we need to store a list then we can create a list when we check 	and find that the key does not exist else we use .append() to add to the list
+
+17) Micro.py 
+i. You cannot use 'is' operator when trying to compare seperate words with substrings as
+    if s="the" and w="the", then s is w will evaluate to true but if w='th' then s[0:2] is w will evaluate to false
+
+ii. If you know the return type of the recursive function then you can understand what will the base case be like for example when I was searching for the number of ways of a pattern then I returned integers like 1 and 0 as the base case. The when I had to print out all the patterns I was faced problems as even though I knew that I was going to return a list of lists:[[]] but still I could not figure out the base case return value.
+So first I thought of a problem where I did almost the same thing I used [''] as I was basically returning a list of strings, so I instinctively used that as my base case returner. After few iterations of the problem in my mind, I thought if I was returning a lists of lists then [''] should actually be [['']] but the thing is I have to create a list of words and to that I had to use .append function read more to find out why.
+Thus the problem was that now my function worked perfectly but had a '' at the end of a list: [['a',''],["b",'']]. Then it dawned upon me that I could do this [[]] and my problems would dissapear and so they did.
+
+iii. If l is a list of lists:[['a'],['b']],
+then 
+1>     for i in l:
+	i=i+['a']
+will give i as ['a','a'] and ['b','a']; but l will still be [['a'],['b']]
+2>     for i in l:
+        i.append('a')
+will give i as ['a','a'] and ['b','a']; but l will then also be [['a','a'],['b','a']]
+
+3> Now append is to add at the end, if we need to insert at front we cand use insert(index,data):
+	w=['s']
+	w.insert(0,'a')
+then w is ['a','s']

@@ -1,0 +1,23 @@
+1) If the problem is related to numbers, your questions to the interviwer should be like:
+	Are negative numbers or 0 considered?
+	If array is used then is the array sorted ?
+	Think about:
+		Can there be only positive or negative numbers what then?
+
+2) If the problem is related to string, your questions to the interviwer should be like:
+	Is case important?
+	What will you do if there are numbers,or space or punctuation marks[lets your potential employers think that you can account for the real world exceptions]
+
+3) If a question uses dynamic programming:
+	Then first try using recursion generally O(2^n)
+	then memoization generally O(2n+1)~O(n)
+	then bottom up approach geberally O(n)
+
+4) You can make smaller,cleaner code using ternary operations but if logics or
+	conditions are too complex then it makes those ternary expressions harder to 	understand, so you need to weigh the pros and cons.
+
+5) Best practice when you are solving a problem in an interview in the respective order:
+	i) Tell the interviewer "Can I think for a second"
+	ii) Think out loud and ask questions like points 1 and 2
+	iii) Don't write code write away, use examples first thnik through them and come 	up with solutions.
+	iv) When you come up with a solution ask if you are on the right track and advance 		only if you are encouraged to do so as it will be pointless to go through 		writing entire code for a non-optimal solution.

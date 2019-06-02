@@ -1,0 +1,58 @@
+1> Solve A Product Array Puzzle
+https://www.interviewcake.com/question/java/product-of-other-numbers
+
+2> Maximum sum such that no two elements are adjacent
+https://medium.com/@karangupta_3592/given-a-list-of-integers-write-a-function-that-returns-the-largest-sum-of-non-adjacent-numbers-9e368f8e69c8
+
+https://stackoverflow.com/questions/4487438/maximum-sum-of-non-consecutive-elements
+
+http://blog.gainlo.co/index.php/2016/12/02/uber-interview-question-maximum-sum-non-adjacent-elements/
+
+https://www.youtube.com/watch?v=UtGtF6nc35g
+
+https://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/
+
+* 3> Counting Unival Subtrees
+https://dailycodingproblem.com/blog/unival-trees/
+https://www.youtube.com/watch?v=7HgsS8bRvjo
+
+4> Serialize and Deserialize a Binary Tree
+	https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/
+	https://www.youtube.com/watch?v=suj1ro8TIVY
+
+5> Implement a job scheduler 
+https://codereview.stackexchange.com/questions/214538/implement-a-job-scheduler-which-takes-in-a-function-f-and-an-integer-n-and-call
+
+https://www.careercup.com/question?id=4710256117547008
+
+https://github.com/nowol79/Daily_Coding_Problem/issues/10
+
+**https://pymotw.com/3/sched/
+
+6> Find The Longest Substring With K Unique Characters
+http://blog.gainlo.co/index.php/2016/04/12/find-the-longest-substring-with-k-unique-characters/
+
+https://www.geeksforgeeks.org/find-the-longest-substring-with-k-unique-characters-in-a-given-string/
+
+https://www.youtube.com/watch?v=RHFrVNmlyA8
+
+
+***7> This question is generally asked for DATA SCIENTISTS:
+Question:How to Pick a Random Element from an Infinite Stream
+References:
+	https://dailycodingproblem.com/blog/how-to-pick-a-random-element-from-an-infinite-stream/
+	https://www.geeksforgeeks.org/select-a-random-number-from-stream-with-o1-space/
+	https://en.wikipedia.org/wiki/Reservoir_sampling
+	https://blog.cloudera.com/blog/2013/04/hadoop-stratified-randosampling-algorithm/
+	https://stackoverflow.com/questions/23351918/select-an-element-from-a-stream-with-uniform-distributed-probability
+
+8> Estimating the value of Pi using Monte Carlo	
+	http://www.eveandersson.com/pi/monte-carlo-circle
+
+9> Find Merge Point of Two Lists 
+	https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/
+
+10> Shortest Path in a Binary Maze
+	https://galaiko.rocks/posts/dcp/maze/
+11>Find the kth last element in a linked list
+	https://www.growingwiththeweb.com/2015/08/find-the-kth-last-element-in-a-linked-list.html

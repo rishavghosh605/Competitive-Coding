@@ -1,0 +1,4 @@
+1> What if there are more than 1 child to the node like unlike left and right we have
+child1,child2,...childN
+
+2> What if we are told to find a semi-unival tree then how will we change our solution

@@ -1,0 +1,13 @@
+According to Python wiki: Time complexity, set is implemented as a hash table. So you can expect to lookup/insert/delete in O(1) average. Unless your hash table's load factor is too high, then you face collisions and O(n).
+
+For more: https://wiki.python.org/moin/TimeComplexity
+
+
+What is time complexity of a list to set conversion? - Stack Overflow
+https://stackoverflow.com/.../what-is-time-complexity-of-a-list-to-set-conversion
+1 answer
+Jan 6, 2016 - Yes. Iterating over a list is O(n) and adding each element to the hash set is O(1) , so the total operation is O(n) .
+
+Recursion: https://www.ideserve.co.in/learn/time-and-space-complexity-of-recursive-algorithms
+
+Recursion:http://blog.gainlo.co/index.php/2015/10/22/a-step-by-step-guide-to-dynamic-programming/

@@ -1,0 +1,12 @@
+At first I thought that if there are a set of words and a string then I can check for that word throughout that string then I can just use a same length window as that word and parse thorugh every possible combination but  it will be useless if I parse from the start as then it will only mean that the word the can be though of as a part of the string "thenthe"
+but if the starting the of then is considered, then we will not get the orderd set of words we needed so it will be better if we use this approach to parse from the back.
+I had not realized that there could be such a problem. It took me time to realize that.
+
+Now here you cannot properly use recursion if we follow this approach as there is good no division of work happening it is bad cause now we need to iterate through the entire string for every word and if we parse from behind and use recursion for every word that we find we need to divide the string into substrings and reattach parts of them. Then pass the remaining words and string to the next  iteration of the recursive function.
+
+But now i realized the parsing back thing won't be that good for words like "bedbath" as I ws thinking when you get a word you just start from the next word. So here if we come from the back then we get bath and then bed seperately but we have to do more checks to get bedbath as a string increasiing time complexity.
+
+2nd Approach:
+So it got me thinking that actual we needed to go down different paths and see what we got.Thus recursion from the start of the string taking each character and seeing if I got a word taking it breaking the string into as many combinations or paths it could take. So to better this approach I need to use a data strucutre which I could use to search through the dictionary efficiently. So hash first came to find but it had two problems one extra space complexity and second there was no prefix based searching with hashes.So the obvious choice was using a Trie data structure.
+
+P.S.: The second approach is more feasible and better a what would happen if the given dictionary had more words than in the string then we would have to do a lot of comparisons without any fruit.
