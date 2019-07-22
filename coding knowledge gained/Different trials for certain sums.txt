@@ -1,0 +1,10 @@
+1) The N Queen Problem:38
+	ii) Understand why arrangement stored three positions instead of two when explicitly returned try doing it withou that
+
+2)The longest palindromic contiguous substring:46
+	i) DP method O(N^2) and O(N^2)
+	ii) Considering odd and even  palindrome with centre [O(N^2) and O(N) is done] do O(N^2) and O(1) by writing everything in one function
+	iii)Manachers algo O(N)
+
+3) Max Contiguous Sum Subarray:49
+	i)Use divide and conquer

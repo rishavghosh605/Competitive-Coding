@@ -1,0 +1,5 @@
+1> Depth First Algorithm and Breadth First Search
+2> Matching Parenthesis
+3> Hash Tables mist imprtantly for memoization
+4> Variables/Pointer Manipulation ,Find the longest palindromic substring
+5> Reversing a linked list
