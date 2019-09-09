@@ -1,0 +1,41 @@
+1. Reverse a stack only using stack operations(push and pop)
+
+*1.1 Sorting a all the elements in a  stack using another stack
+2. Implement a stack using two queues
+
+3. Implement 2 stacks in a single array
+
+4. Convert infix to postfix (revers polish) expression
+
+5. Write a program to find the nth node from the end of a linked list (without traversing through whole list?)
+
+6. Reverse a LL in two different ways and display the contents before and after reversing
+
+7. Write a program to insert a node to a LL a) in nth position b) before a speciic data c) after a specific data in the LL
+
+8. Given a LL, wap to check if a linked ends in a cycle or not.
+
+9. Write a program to check if the number of nodes in a linked list is odd or even(Do not use a counter variable to count explicitly)
+
+10. Write a program to demonstrate lazy deletion in linked list
+
+11. Top view of tree
+
+12 Implement queue using 2 stacks
+
+13. Construct a binary tree to obtain a postorder expression, if given letters
+are EICFJBGDKHLA.
+
+14. Consider the following arithmetic expression P written in postfix notion
+
+		 P = 10, 12, 4, *, +, 24, 8 , /, -
+Evaluate the postfix expression and obtain the result using stack.
+
+15. Combine two ordered linked lists into a single ordered linked list
+16. 
+16. Construct a heap using a given age of employees 52,75,46,31,21,90,68. The final heap ordering taken as >= on integers.
+
+17. Write a program to traverse a single linked list and search for a even value node. If found delete its predecessor node from the linked list.
+
+18. Display min and max element with position in a linked list.
+19. Devise a code to accept a character array of size 8 and sort based on heap Sort algorithm. First perform the heapify process to get the min heap list from the normal list.

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Bracket
+comment1.params=type\ position
+comment1.target=Bracket(char,\ int)
+comment2.params=c
+comment2.target=boolean\ Match(char)
+numComments=3
