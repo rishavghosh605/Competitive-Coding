@@ -56,3 +56,27 @@ References:
 	https://galaiko.rocks/posts/dcp/maze/
 11>Find the kth last element in a linked list
 	https://www.growingwiththeweb.com/2015/08/find-the-kth-last-element-in-a-linked-list.html
+
+12> Finding the edit distance between two strings
+	https://lawrencewu.me/2015/02/15/levenshtein-distance.html
+	https://www.youtube.com/watch?v=MiqoA-yF-0M
+
+13> Generate integer from 1 to 7 with equal probability
+	https://www.quora.com/How-do-you-design-a-rand7-function-using-a-rand5-function
+	https://leetcode.com/articles/implement-rand10-using-rand7/
+	https://www.geeksforgeeks.org/generate-integer-from-1-to-7-with-equal-probability/
+	https://www.geeksforgeeks.org/generate-integer-from-1-to-7-with-equal-probability/
+	https://en.wikipedia.org/wiki/Rejection_sampling
+	
+14> Count Inversions in an Array
+	https://stackoverflow.com/questions/33116640/how-do-i-find-the-number-of-inversions-in-an-array
+	https://runzhuoli.me/2018/09/06/count-inversions-in-an-array.html
+	http://juliachencoding.blogspot.com/2016/08/count-inversions-extended-merge-sort.html
+
+15> A Neat Bitwise Trick For Swapping Even and Odd Bits
+	https://www.dailycodingproblem.com/blog/neat-bitwise-trick/
+
+16> Find two prime numbers with given sum
+	https://en.wikipedia.org/wiki/Goldbach's_conjecture
+	https://www.geeksforgeeks.org/find-two-prime-numbers-with-given-sum/
+

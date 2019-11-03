@@ -32,13 +32,12 @@ def segregateValue(arr):
             ioG+=1
             
     # ioB stores the index where the character B if found will be replaced
-    ioB = ioG
+    '''ioB = ioG
     for i in range(len(arr)):
         if arr[i]=='B':
             arr[i]=arr[ioB]
             arr[ioB]="B"
-            ioB+=1
-
+            ioB+=1'''
 '''Adding Constraint:
    No extra space allowed(except O(1) space like variables) and minimize the time complexity.
    P.s: You can only traverse the array once.
@@ -51,7 +50,7 @@ def threePartition1(arr):
     bCount=len(arr)-1
     
     while i<=bCount:
-        print(arr,i,len(arr))
+        #print(arr,i,len(arr))
         if arr[i]=="R":
             arr[i],arr[rCount]=arr[rCount],"R"
             if rCount==i:
@@ -76,7 +75,7 @@ def threePartition2(arr):
     bCount=len(arr)-1
     
     while i<=bCount:
-        print(arr,i,len(arr))
+        #print(arr,i,len(arr))
         if arr[i]=="R":
             arr[i],arr[rCount]=arr[rCount],"R"
             i+=1     
@@ -95,8 +94,8 @@ if __name__=="__main__":
 
     #arr=['r','g','b','g','b','g','b','r','r','b','g','r','r','b','b','g','r']
     #arr=list(map(str.upper(x),(lambda x: x for x in arr)))
-    arr=['R','G','B','G','B','G','B','R','R','B','G','R','R','B','B','G','R']
-    #arr=['G', 'B', 'R', 'R', 'B', 'R', 'G']
+    #arr=['R','G','B','G','B','G','B','R','R','B','G','R','R','B','B','G','R']
+    arr=['G', 'B', 'R', 'R', 'B', 'R', 'G']
     #input("Enter the characters R,G,B: ").split(" ")
     #segregateValue(arr)
     print("Segregated array: ", arr)

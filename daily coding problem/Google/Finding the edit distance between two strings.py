@@ -37,6 +37,6 @@ def leventshein_using_matrix(s1,s2):
             
 s1=input("Enter first string: ")
 s2=input("Enter second string: ")
-print(levenshtein(s1,s2))
+print("d",levenshtein(s1,s2))
 print(memo)
 leventshein_using_matrix(s1,s2)

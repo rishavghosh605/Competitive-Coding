@@ -86,3 +86,77 @@ will give i as ['a','a'] and ['b','a']; but l will then also be [['a','a'],['b',
 	w=['s']
 	w.insert(0,'a')
 then w is ['a','s']
+
+18) If you initialize a lists of lists as [[0]*2]*2 you cannot alter the value of a certain index like 
+a[0][0] = 5 will result in a=[[5,0],[5,0]], so use numpy where after creating a list of lists you can change elements by a[0,0]=5
+	but if you initialized it like [[0 for x in range(9)]for y in range(9)] then you can index the elements like a[0][0]=6
+
+19) When thinking of a problem, if it appears that there that it is similar if you approach it from both sides-left and right like array problems then you can compute from the both sides at once.
+
+20) The best solution is to use XOR. XOR of all array elements gives us the number with single occurrence. The idea is based on following two facts.
+	a) XOR of a number with itself is 0.
+	b) XOR of a number with 0 is number itself.
+
+21) return s.append(2) will return None
+	You need to do s.append(2) then return to get a value
+	Have to find out why
+
+22) chessboard!=0:
+	ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+	The chessboard was intialized as a []
+
+23)paint_house_matrix=[[]*3] does not give you [[],[],[]] it stays [[]],
+	so to append elements to a list use the following code:
+	R = int(input("Enter the number of rows:")) 
+	C = int(input("Enter the number of columns:"))		 
+  
+	# Initialize matrix 
+	matrix = [] 
+	print("Enter the entries rowwise:") 
+  
+	# For user input 
+	for i in range(R):          # A for loop for row entries 
+	    a =[] 
+	    for j in range(C):      # A for loop for column entries 
+        	 a.append(int(input())) 
+	    matrix.append(a) 
+
+24) You cannot have a tuple in a function argument:
+	def function(a,(b,c))  is Wrong
+	def function(a, b, c)  is Correct
+
+25) To do deepcopy in python:
+	import copy
+	b=[5,6]
+	a=copy.deepcopy(b)
+	c=copy.copy(b)
+	Difference is:
+	a[0]=4
+	b=[5,6] #No change in b due to chnge in a
+	c[0]=4
+	b=[4,6] #Change in b due to chnge in c
+
+26) So in backtracking problems like N Queen Problem and Sudoku Solver what you need to think about solving it is that when you are iterating through all the possibilites ,
+	the basec case and the function should be framed such that when we find the correct combination then we dont go through the further combinations which we would have if we had to 	backtrack to a certain point and then check further combinations but when we get the correct combination we go back in the call stack but dont try anymore combinations
+
+
+27) Rememeber when you increment a certain variable generally loop variables like i if it at the start then i wont increase after the loop ends but if is incremented at the end then the 	operartion will  take place and before the loop ends i will be incremented, talking about post increment in both cases. So now what value of i is you need to be wary of its 	value. i at bottom is 1 more than if i was at top when loop ends if i was incremented by 1.
+
+
+28) Bit Manipulation Tips:
+	i) x&1: Using this we can check if x is odd or not if the expression evaluates to true or false respectuvely.
+	ii) x>>1 : using this wecan divide x by 2
+
+29) Always use Post-Order Traversal for expression trees.
+
+30) Iterative DFS is done using a stack.
+    Iterative BFS is done using a queue.
+
+31) Always remember when you are doing node.left or node.right always check if node!.left=None or node!.right=None
+
+32) "In-place" algorithms are defined as:
+	An in-place algorithm transforms the input without using any extra memory. As the algorithm executes, 
+	the input is usually overwritten by the output and no additional space is needed for this operation.
+
+33) If you want to do an O(1) search then you can either use a hash or a set. It is better to use a set in cases of when you just want to traverse a list and find its value in O(1) time
+	and also you do not care about duplicates at the same time. 

@@ -21,3 +21,42 @@
 	ii) Think out loud and ask questions like points 1 and 2
 	iii) Don't write code write away, use examples first thnik through them and come 	up with solutions.
 	iv) When you come up with a solution ask if you are on the right track and advance 		only if you are encouraged to do so as it will be pointless to go through 		writing entire code for a non-optimal solution.
+
+6) In a question like find the tree using preorder and inorder traversals, generally we may do the two individuall. Like once we make an algorithm for the preorder traversal then we go for the inorder. But the catch is that both of the traversals are of the same tree. And, the infrmation tha was missing in creating the preorder trversals was probably that we were not also checing the inorder traversal. So the moral is that when you are trying to solve one part of the sum maybe the second part is only there to help you get the firstv part.
+
+7) Adjacent means next to the element that is just beside it. Check meaning of neighbouring cells in conways game of life.
+
+8)     Correct way to write:
+ while i<len(half1) and i<len(half2):
+       if half1[i]>half2[j]:
+            arr.append(half2[j])
+            j+=1
+            
+        elif half1[i]<half2[j]:
+            arr.append(half1[i])
+            i+=1
+
+        else:
+            
+            arr.append(half1[i])
+            arr.append(half2[j])
+
+	Incorrect way to write:	
+while i<len(half1) and i<len(half2):
+	if half1[i]>half2[j]:
+            arr.append(half2[j])
+            j+=1
+            
+        if half1[i]<half2[j]:
+            arr.append(half1[i])
+            i+=1
+
+	if half1[i]==half2[j]:
+            
+            arr.append(half1[i])
+            arr.append(half2[j])
+
+I thought that it would be fine but i was increased and the increased i was being checked by the below if statements but elif wouldnt let that happen
+Do not let this shit happen
+
+9) i++ is wrong but i+=1
