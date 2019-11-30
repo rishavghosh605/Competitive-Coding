@@ -1,10 +1,23 @@
 from queue import Queue
 
 class Matrix():
-    pass
+    def __init__(self,M=0,N=0):
+        self.M=M
+        self.N=N
+        self.matrix=[[0 for j in range(N)]for i in range(M)]
 
-def create_matrix(matrix):
-    pass
+    def print(self):
+        print(self.matrix)
+
+    def get_rows(self):
+        return self.M
+
+    def get_columns(self):
+        return self.N
+    
+   
+    
+        
 
 def find_steps_to_end(start,end,matrix):
     visited_matrix=Matrix(M,N)
@@ -33,6 +46,7 @@ def find_neighbours(node,visited_matrix):
             if not (i==0 and j==0):
                 if (isSafe(node[0]+r,node[1]+j)):
                     neighbors_list.append((node[0]+r,node[1]+j))
+    return neighbors_list
 
 if __name__=="__main__":
 
@@ -40,6 +54,12 @@ if __name__=="__main__":
     N=int(input("Enter the column size of the matrix: "))
 
     matrix=Matrix(M,N)
-    create_matrix(matrix)
-    find_steps_to_end(start,end,matrix)
+    matrix.print()
+    start=tuple(map(int,input("Enter the start coordinate of the matrix: ").split()))
+    end=tuple(map(int,input("Enter the end coordinate of the matrix: ").split()))
+    #find_steps_to_end(start,end,matrix)
+    visited_matrix=Matrix(M,N)
+    print(find_neighbours(start,visited_matrix))
+    
+    
     
