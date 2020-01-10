@@ -85,38 +85,46 @@ class BST:
             
     def check_bst_property(self):
         if self.root:
-            return self._check_bst_property(self.inorder_print_tree())
+            min=float('-inf')
+            max=float('inf')
+            return self._check_bst_property(self.root,min,max)
         return None
 
-    def _check_bst_property(self,inorder_traversal):
-        if inorder_traversal:
-            inorder_traversal=list(map(int,inorder_traversal.strip().split(" ")))
-            print(inorder_traversal)
-            for i in range(1,len(inorder_traversal)):
-                #print(i,inorder_traversal[i])
-                if inorder_traversal[i]<inorder_traversal[i-1]:
-                    return False
-        return True
+    def _check_bst_property(self,node,min,max):
+        if(node == None):
+            return True
+        if(node.data<=min or node.data>max):
+
+            return False
+        return self._check_bst_property(node.left,min,node.data) and self._check_bst_property(node.right,node.data,max)
+##        if inorder_traversal:
+##            inorder_traversal=list(map(int,inorder_traversal.strip().split(" ")))
+##            print(inorder_traversal)
+##            for i in range(1,len(inorder_traversal)):
+##                #print(i,inorder_traversal[i])
+##                if inorder_traversal[i]<inorder_traversal[i-1]:
+##                    return False
+##        return True
         
 
 if __name__=="__main__":
-    bst=BST()
-    bst.insert(4)
-    bst.insert(2)
-    bst.insert(8)
-    bst.insert(10)
-    bst.inorder_print_tree()
-    #print(bst.is_bst_satisfied())
-    print("Is BST: ",bst.check_bst_property())
+##    bst=BST()
+##    bst.insert(4)
+##    bst.insert(2)
+##    bst.insert(8)
+##    bst.insert(10)
+##    bst.inorder_print_tree()
+##    #print(bst.is_bst_satisfied())
+##    print("Is BST: ",bst.check_bst_property())
     print("--------")
     b=BST()
-    b.root=Node(12)
-    b.root.left=Node(3)
-    b.root.left.left=Node(1)
-    b.root.left.right=Node(13)
-    b.root.right=Node(14)
-    b.root.right.left=Node(11)
-    b.root.right.right=Node(15)
+    b.root=Node(10)
+    b.root.left=Node(-10)
+    b.root.left.left=Node(-20)
+    b.root.left.right=Node(0)
+    b.root.right=Node(19)
+    b.root.right.left=Node(17)
+    b.root.right.right=Node(20)
     b.inorder_print_tree()            
     #print(b.is_bst_satisfied())
     print("Is BST: ",b.check_bst_property())
