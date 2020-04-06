@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=comparable_demo
+comment1.params=rollno\ name\ age
+comment1.target=Student(int,\ java.lang.String,\ int)
+comment2.params=st
+comment2.target=int\ compareTo(Student)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

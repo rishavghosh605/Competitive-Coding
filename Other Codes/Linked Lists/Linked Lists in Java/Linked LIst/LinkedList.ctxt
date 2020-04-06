@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=LinkedList
+comment1.params=data
+comment1.target=void\ insert(int)
+comment2.params=data
+comment2.target=void\ insertAtStart(int)
+comment3.params=index\ data
+comment3.target=void\ insertAt(int,\ int)
+comment4.params=
+comment4.target=void\ show()
+numComments=5

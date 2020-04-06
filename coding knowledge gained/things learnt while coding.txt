@@ -160,3 +160,15 @@ a[0][0] = 5 will result in a=[[5,0],[5,0]], so use numpy where after creating a 
 
 33) If you want to do an O(1) search then you can either use a hash or a set. It is better to use a set in cases of when you just want to traverse a list and find its value in O(1) time
 	and also you do not care about duplicates at the same time. 
+34) Subsequence need not bbe contiguous in string unlike a substring for example abc is a subsqeuence of 
+ahgbdfco. 	
+35) When we have overlapping problems like find the overlapping or the longest common subsequence
+of two strings, you can use dynamic programming as it decreases the use of complex variables and
+conditions moreover we think of the sum as the one side is one string like acroos the columns
+and across the rows is the other string, then what we do is that we think of coordinate 0,0 
+as the the longest common susequence when the only strings are a[0] and b[0],  similarly,
+coordinate (2,3) can be thought of as the length of the longest subsequence of the strings a[0:2] and b[0:3] ,
+given a,b are the strings.	
+36) Djikstra is O(n^2) for each vertex.
+37) Whenever you go for a s.charAt(i) make sure that s.length() > i so always keep that check.
+38) For activity problems always sort using the end interval ,(start,end), it is a dp problem which gets solved using a 1D array only, n need of 2D**.

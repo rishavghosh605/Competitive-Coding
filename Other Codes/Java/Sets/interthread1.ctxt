@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=interthread1
+comment1.params=amount
+comment1.target=void\ withdraw(int)
+comment2.params=amount
+comment2.target=void\ deposit(int)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment4.params=
+comment4.target=void\ run()
+comment5.params=
+comment5.target=void\ run()
+numComments=6

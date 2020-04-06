@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=simple
+comment1.params=d
+comment1.target=void\ add(java.lang.Object)
+comment2.params=
+comment2.target=java.lang.Object\ get()
+comment3.params=ar
+comment3.target=void\ main(java.lang.String[])
+numComments=4

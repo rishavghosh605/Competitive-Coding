@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=LikedList_String
+comment1.params=L\ s
+comment1.target=java.util.LinkedList\ Insert(java.util.LinkedList,\ java.lang.String)
+comment2.params=L\ s
+comment2.target=java.util.LinkedList\ Remove(java.util.LinkedList,\ java.lang.String)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
